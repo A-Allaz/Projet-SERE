@@ -8,12 +8,12 @@ import time
 driver = webdriver.Chrome()
 
 url = "http://challenge01.root-me.org/realiste/ch12/login.aspx"
-password = "2F"
+password = ""
 
 try:
     driver.get(url)
 
-    for i in range(2, 128):  # Commencez à partir du 3ème caractère
+    for i in range(0, 128):  # Commencez à partir du 3ème caractère
         start = 32  # Caractère ASCII de départ (espace)
         end = 126  # Caractère ASCII de fin (~)
         while start <= end:
